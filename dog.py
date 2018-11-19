@@ -52,16 +52,16 @@ class Dog(Animal):
 
     def calculate_x_direction(self):
         """ Calculate direction to face in x - dimenion """
-        if abs(self.change_y) > abs(self.change_x):
+        if abs(self.change_y) > (0.75)*abs(self.change_x):
             if self.change_y <= 0:
-                self.direction = 4
-            else:
-                self.direction = 2            
-        else:
-            if self.change_x >= 0:
                 self.direction = 1
             else:
-                self.direction = 3
+                self.direction = 3            
+        else:
+            if self.change_x >= 0:
+                self.direction = 0
+            else:
+                self.direction = 2
     def check_bounds(self):
         # Periodic boundary conditions
         if self.x > constants.display_width :
@@ -82,6 +82,7 @@ class Dog(Animal):
         # Move up/down
         self.y += self.change_y
         self.check_bounds()
+        self.calculate_x_direction()
 
 
 

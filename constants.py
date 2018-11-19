@@ -4,10 +4,10 @@ Global constants
 # Screen dimensions
 
 display_width = 800
-display_height = 400
+display_height = 800
 size = (display_width, display_height)
 
-FPS = 60
+FPS = 30
 frames = FPS // 12
 
 SCREEN_HEIGHT = display_width

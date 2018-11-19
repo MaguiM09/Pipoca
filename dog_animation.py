@@ -49,7 +49,7 @@ strips = [
 clock = pygame.time.Clock()
 # Create Initial Dogs
 dogs = []
-for i in range(10):
+for i in range(64):
     dogs.append(Dog())
 # Set up Continuous Loop
 n = 0
@@ -60,15 +60,14 @@ while True:
     surface.fill(constants.background) 
     for dog in dogs:
         dog.update()
-        dog.calculate_x_direction()
         if dog.direction == 0:
             n = 0
         elif dog.direction == 1:
             n = 2
         elif dog.direction == 2:
-            n = 4
-        elif dog.direction == 3:
             n = 8
+        elif dog.direction == 3:
+            n = 4
         last_image = image
         image = strips[n].next()
         # Draw all dogs to the screen
