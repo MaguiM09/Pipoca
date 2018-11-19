@@ -10,7 +10,8 @@ size = (display_width, display_height)
 FPS = 30
 frames = FPS // 12
 
-
+to complie all the images using ffmpeg
+ffmpeg -r 30 -f image2 -i .\Snaps\%04d.png result.avi
 
 
 ## Graphics Styling
