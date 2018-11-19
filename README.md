@@ -3,13 +3,15 @@ pygame dog sprite from spritesheet
 
 ![sample gif](./img/result.gif)
 
-Global constants
+## Global constants
 display_width = 640
 display_height = 480
 size = (display_width, display_height)
 
 FPS = 30
 frames = FPS // 12
+
+
 
 
 ## Graphics Styling
