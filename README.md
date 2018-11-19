@@ -1,6 +1,5 @@
 # dog_sprite
-pygame dog sprite from spritesheet
-
+Brownian motion for using sprite sheets with classes
 ![sample gif](./img/result.gif)
 
 ## Global constants
