@@ -2,6 +2,11 @@
 Global constants
 """
 # Screen dimensions
+import pygame
+import cat
+# import sys
+import random
+from sprite_strip_anim import SpriteStripAnim
 
 display_width = 800
 display_height = 800
@@ -10,25 +15,20 @@ size = (display_width, display_height)
 FPS = 30
 frames = FPS // 12
 
-SCREEN_HEIGHT = display_width
-DISPLAY_HEIGHT = display_height
-BLACK = (0,0,0)
-WHITE = (255,255,255)
-RED = (255, 87, 51) 
-BLUE = (51, 219, 255)
-GREEN = (117, 255, 51)
-
 # Colors
+background = (213, 248, 255)
 black = (0,0,0)
 white = (255,255,255)
-red_one = (255, 87, 51) 
-red_two = (255, 189, 51)
-red_three = (219, 255, 51)
-green_one = (117, 255, 51)
-green_two = (51, 255, 87) 
-green_three = (51, 255, 189)
-blue_one = (51, 219, 255)
+yellow = (255, 252, 149)
+purple = (240, 196, 255)
+gray = (175, 175, 175)
+red_gray = (213, 186, 193)
+off_white = (255, 255, 245)
 
-background = (213, 248, 255)
+num_cats = 24
+cat_color = random.randint(0,3)
+n = 0
 
-size = (800,600)
+max_force = 0.5
+max_speed = 4
+perception = 100
